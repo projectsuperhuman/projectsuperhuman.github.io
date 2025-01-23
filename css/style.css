@@ -1,1 +1,56 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
 
+header {
+    background-color: #eee; /* Slightly lighter grey header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff; /* Blue links */
+}
+
+main {
+    padding: 20px;
+    max-width: 800px; /* Limit content width for readability */
+    margin: 20px auto; /* Center content on the page */
+    background-color: #fff; /* White content background */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for content box */
+    border-radius: 5px; /* Rounded corners for content box */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: #333; /* Dark grey headings */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    /* position: fixed;  Removed for now, as it might interfere with initial layout */
+    bottom: 0;
+    width: 100%;
+}
