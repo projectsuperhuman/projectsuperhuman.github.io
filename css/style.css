@@ -1,9 +1,10 @@
 body {
-    font-family: verdana;
+    font-family: Verdana, sans-serif; /* Added a fallback font */
     margin: 0;
     padding: 0;
     background-color: #000; /* Black background */
     color: #fff; /* White text */
+    line-height: 1.6; /* Improved readability */
 }
 
 header {
@@ -11,11 +12,17 @@ header {
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid #333; /* Dark grey border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for header */
+    position: sticky; /* Keep the header fixed at the top */
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     padding: 0;
+    margin: 10px 0;
     list-style: none;
+    text-align: center;
 }
 
 nav ul li {
@@ -26,30 +33,81 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: #99ccff; /* Light blue for links */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    color: #66b2ff; /* Slightly brighter blue on hover */
 }
 
 main {
     padding: 20px;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 40px auto; /* Add extra margin for better centering */
     background-color: #111; /* Slightly lighter black for content */
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
-    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    border-radius: 8px; /* Slightly more rounded corners */
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Added extra spacing between sections */
 }
 
-h1, h2, h3 {
-    color: #fff; /* White headings */
+h1 {
+    color: #ffa500; /* Bright orange for main heading */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds a modern touch */
+    text-align: center;
+}
+
+h2 {
+    color: #00bfff; /* Cyan for subheadings */
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #ddd; /* Slightly softer white for smaller headings */
+}
+
+p {
+    color: #ccc; /* Softer white for text */
+    line-height: 1.8; /* Improved readability */
+    margin: 10px 0;
+}
+
+a {
+    color: #99ccff; /* Light blue for all links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+a:hover {
+    color: #66b2ff; /* Slightly brighter blue on hover */
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #111;
     border-top: 1px solid #333;
+    color: #888; /* Lighter grey for footer text */
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+button {
+    background-color: #99ccff; /* Light blue button */
+    color: #000; /* Black text on button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #66b2ff; /* Brighter blue on hover */
 }
